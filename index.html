@@ -7,8 +7,10 @@
 
     <title>Spotify</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/styles/reset.css">
+    <link rel="stylesheet" href="src/styles/var.css">
+    <link rel="stylesheet" href="src/styles/sidebar-footer.css">
+    <link rel="stylesheet" href="src/styles/main-content.css">
 
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="src/styles/reset.css" />
@@ -55,38 +57,73 @@
             </ul>
         </nav>
 
-            <div class="library">
-                <div class="library-content">
-                    <button class="library-button">
-                        <span class="fa fas fa-book"></span>
-                        <span>Sua Biblioteca</span>
-                    </button>
-                    <span class="fa fa-plus"></span>
-                </div>
-
-                <section class="section-playlist">
-                    <div class="playlist-content">
-                        <span class="text title">Crie sua primeira playlist</span>
-                        <span class="text subtitle">É facíl vamos te ajudar</span>
-
-                        <button class="playlist-button">Criar Playlist</button>
-                    </div>
-                </section>
-
-                <div class="cookies">
-                    <a href="">Cookies</a>
-                </div>
-
-                <div class="languages">
-                    <button class="languages-button">
-                        <span class="fa fa-globe"></span>
-                        <span>Portugues do Brasil</span>
-                    </button>
-                </div>
+        <div class="library">
+            <div class="library-content">
+                <button class="library-button">
+                    <span class="fa fas fa-book"></span>
+                    <span>Sua Biblioteca</span>
+                </button>
+                <span class="fa fa-plus"></span>
             </div>
-    </div>
-</div>
 
+            <section class="section-playlist">
+                <div class="playlist-content">
+                    <span class="text title">Crie sua primeira playlist</span>
+                    <span class="text subtitle">É facíl vamos te ajudar</span>
+
+                    <button class="playlist-button">Criar Playlist</button>
+                </div>
+            </section>
+
+            <div class="cookies">
+                <a href="#">Cookies</a>
+            </div>
+
+            <div class="languages">
+                <button class="languages-button">
+                    <span class="fa fa-globe"></span>
+                    <span>Portugues do Brasil</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header-navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="assets/icons/small-left.png" alt="seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="assets/icons/small-right.png" alt="seta direita">
+                    </button>
+
+                    <div class="header-search">
+                        <img src="assets/icons/search.png" alt="">
+                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?"/>
+                    </div>
+
+                    <div class="header-login">
+                        <button class="subscribe"> Inscreva-se</button>
+                        <button class="login"> Entrar</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-texts">
+            <p class="text1 ">TESTAR O PREMIUM DE GRAÇA</p>
+            <p class="text2">Inscreva-se para curtir músicas limitadas e podcasts só com alguns anúcios. Não precisa de
+                cartão de crédito.</p>
+        </div>
+        <button class="footer-button">Inscreva-se grátis</button>
+    </footer>
 </body>
 
 </html>
